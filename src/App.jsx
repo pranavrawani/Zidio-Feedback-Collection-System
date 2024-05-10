@@ -8,7 +8,14 @@ import AdminLogin from './components/AdminLogin';
 import UserLogin from './components/UserLogin';
 import AdminRegister from './components/AdminRegister';
 import UserRegister from './components/UserRegister';
-import { Outlet } from "react-router-dom";
+import AdminDashboard from './components/AdminDashboard';
+import LayoutAdmin from './components/shared/LayoutAdmin';
+import AdminFeedbackForm from './components/AdminFeedbackForm';
+import AddCollege from './components/add-college';
+import AddDepartment from './components/add-department';
+import AverageFeedback from './components/average-feedback';
+import AdminSettings from './components/adminsetting';
+import AdminLogout from './components/adminlogout';
 
 function App() {
   return (
@@ -25,6 +32,17 @@ function App() {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/admin-register" element={<AdminRegister />} />
         <Route path="/user-register" element={<UserRegister />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/adminfeedback" element={<AdminFeedbackForm />} />
+        <Route path="/adminanalysis"element={<AdminPanel/>}/>
+        <Route path="/add-college"element={<AddCollege/>}/>
+        <Route path="/add-department"element={<AddDepartment/>}/>
+        <Route path="/average-feedback"element={<AverageFeedback/>}/>
+        <Route path="/admin-setting"element={<AdminSettings/>}/>
+        <Route path="/admin-logout"element={<AdminLogout/>}/>
+
+
+
 
       </Routes>
     </Router>

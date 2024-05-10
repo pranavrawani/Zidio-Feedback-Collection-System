@@ -1,6 +1,5 @@
 import {
     HiOutlineViewGrid,
-  
     HiOutlineDocumentText,
     HiOutlineCog,
     HiOutlineQuestionMarkCircle,
@@ -22,20 +21,26 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         icon: <HiOutlineDocumentText />,
     },
     {
-        key: 'adminpanel', // Corrected key to match the label
-        label: 'Admin Panel',
-        path: '/adminpanel',
-        icon: <HiOutlineShieldCheck />, // Use the ShieldCheck icon for Admin Panel
+        key: 'profile',
+        label: 'Profile',
+        path: '/profile',
+        icon: <HiOutlineShieldCheck />,
     },
-];
-
-export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
+    {
+        key: 'notifications',
+        label: 'Notifications',
+        path: '/notifications',
+        icon: <HiOutlineCog />,
+    },
     {
         key: 'settings',
         label: 'Settings',
         path: '/settings',
         icon: <HiOutlineCog />,
     },
+];
+
+export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
     {
         key: 'support',
         label: 'Support',
